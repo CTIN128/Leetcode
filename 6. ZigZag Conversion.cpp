@@ -67,7 +67,7 @@ public:
 
 
 
-discuss answer：
+/*discuss answer：
 
 文中省略处做了优化将152ms变成52ms
 
@@ -87,5 +87,5 @@ index为0时，让step变成1让index加
 
 
 string对象.append(const char *)
-可让对象末尾加上常量字符串
+可让对象末尾加上常量字符串*/
 
