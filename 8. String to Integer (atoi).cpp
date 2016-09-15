@@ -70,6 +70,8 @@ public:
 /*
 discuss answer：
 
+Runtime：6ms
+
 int myAtoi(string str) 
 {
     long result = 0;
@@ -98,5 +100,5 @@ int myAtoi(string str)
  i = str.find_first_not_of(' ');//返回不是'空格'的索引
 indictor是个正负号指示器
 主要是在while循环中一旦遇到不是数字的就把当前的result返回
-完美的解决了再次遇到空格和‘+’问题
+完美的解决了再次遇到空格和‘+’‘-’问题
 */
