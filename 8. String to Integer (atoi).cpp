@@ -70,4 +70,33 @@ public:
 /*
 discuss answer：
 
+int myAtoi(string str) 
+{
+    long result = 0;
+    int indictor = 1; 
+   for(size_t i = 0;i < str.size();)
+   {
+    i = str.find_first_not_of(' ');//返回不是‘ ’的索引
+    if(str[i] == '-'||str[i] == '+')
+    {
+        indictor = (str[i++] == '-')?-1:1;
+    }
+    while(str[i] >= '0'&&str[i] <= '9')
+    {
+        result = result*10 + (indictor * (str[i++]-'0'));
+        if(result >= INT_MAX)
+            return INT_MAX;
+        else if(result <= INT_MIN)
+            return INT_MIN;
+    }
+    return result;
+   }
+   return 0;
+}
+
+
+ i = str.find_first_not_of(' ');//返回不是'空格'的索引
+indictor是个正负号指示器
+主要是在while循环中一旦遇到不是数字的就把当前的result返回
+完美的解决了再次遇到空格和‘+’问题
 */
