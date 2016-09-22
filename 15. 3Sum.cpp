@@ -21,7 +21,7 @@ public:
     vector<vector<int>> threeSum(vector<int>& nums) {
         vector<vector<int>> vec;
         std::sort(nums.begin(), nums.end());
-        for(size_t i = 0;i < nums.size();++i)
+        for(size_t i = 0;i < nums.size()-2;++i)
         {
             int target = -nums[i];
             int front = i+1;
